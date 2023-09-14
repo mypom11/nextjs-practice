@@ -6,6 +6,7 @@ import Button from '../UI/Button'
 import DateIcon from '../icons/date-icon'
 import AddressIcon from '../icons/address-icon'
 import ArrowRightIcon from '../icons/arrow-right-icon'
+import Image from 'next/image'
 
 const EventItem = ({ title, image, date, location, id }: eventModel) => {
   const formattedDate = new Date(date).toLocaleDateString('ko-KR', {
@@ -19,7 +20,7 @@ const EventItem = ({ title, image, date, location, id }: eventModel) => {
 
   return (
     <li className={classes.item}>
-      <img src={'/' + image} alt={title} />
+      <Image src={'/' + image} alt={title} fill width={280} height={340} />
       <div className={classes.content}>
         <div className={classes.summary}>
           <h2>{title}</h2>

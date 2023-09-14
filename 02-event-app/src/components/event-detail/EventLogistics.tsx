@@ -3,6 +3,7 @@ import DateIcon from '../icons/date-icon'
 import LogisticsItem from './LogisticsItem'
 import classes from './EventLogistics.module.css'
 import { eventModel } from '../events/EventList'
+import Image from 'next/image'
 
 function EventLogistics({
   date,
@@ -20,7 +21,7 @@ function EventLogistics({
   return (
     <section className={classes.logistics}>
       <div className={classes.image}>
-        <img src={`/${image}`} alt={title} />
+        <Image src={`/${image}`} alt={title} width={300} height={300} />
       </div>
       <ul className={classes.list}>
         <LogisticsItem icon={DateIcon()}>
