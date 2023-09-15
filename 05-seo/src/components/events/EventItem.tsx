@@ -1,5 +1,5 @@
 import React from 'react'
-import { eventModel } from './EventList'
+import { eventModel } from '@/model'
 
 import classes from './EventItem.module.css'
 import Button from '../UI/Button'
